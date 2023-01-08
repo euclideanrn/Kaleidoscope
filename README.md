@@ -37,4 +37,5 @@ By the end of the tutorial, we’ll have written a bit less than 1000 lines of (
 
 # Some Useful Links
 [My First Language Frontend with LLVM Tutorial](https://llvm.org/docs/tutorial/MyFirstLanguageFrontend/index.html) - The official website of this tutorial.  
-[Stackedit](https://stackedit.io/app#) - An online markdown editor.
+[Stackedit](https://stackedit.io/app#) - An online markdown editor.  
+[Introduction to LLVM Architecture](https://www.bilibili.com/video/BV1CG4y1V7Dn/?spm_id_from=333.788)
