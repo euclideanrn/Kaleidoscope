@@ -1,10 +1,7 @@
 //
 // Created by Evan Z on 1/7/23.
 //
-
-#ifndef KALEIDOSCOPE_PERSON_H
-#define KALEIDOSCOPE_PERSON_H
-
+#pragma once
 
 #include <string>
 
@@ -20,6 +17,3 @@ private:
     std::string name_;
     int age_;
 };
-
-
-#endif //KALEIDOSCOPE_PERSON_H
