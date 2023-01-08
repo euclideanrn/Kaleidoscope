@@ -25,7 +25,8 @@ By the end of the tutorial, we’ll have written a bit less than 1000 lines of (
 
 # Progress
  - [x] Make up my mind to do this.
- - [ ] Kaleidoscope language and Lexer
+ - [x] Set up the project.
+ - [x] Kaleidoscope language and Lexer
  - [ ] Implementing a Parser and AST
  - [ ] Code generation to LLVM IR
  - [ ] Adding JIT and Optimizer Support
