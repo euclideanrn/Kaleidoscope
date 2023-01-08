@@ -24,7 +24,7 @@ This tutorial is structured into chapters covering individual topics, allowing y
 By the end of the tutorial, we’ll have written a bit less than 1000 lines of (non-comment, non-blank) lines of code. With this small amount of code, we’ll have built up a nice little compiler for a non-trivial language including a hand-written lexer, parser, AST, as well as code generation support - both static and JIT! The breadth of this is a great testament to the strengths of LLVM and shows why it is such a popular target for language designers and others who need high performance code generation.
 
 # Progress
-
+ - [x] Make up my mind to do this.
  - [ ] Kaleidoscope language and Lexer
  - [ ] Implementing a Parser and AST
  - [ ] Code generation to LLVM IR
