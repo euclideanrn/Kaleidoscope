@@ -13,7 +13,7 @@ find_package(PkgConfig REQUIRED)
 pkg_check_modules(FMT REQUIRED IMPORTED_TARGET fmt)
 
 # set the source files, only one file with main() method is allowed
-set(SOURCE_FILES src/lexer.cpp src/main.cpp)
+set(SOURCE_FILES src/main.cpp src/lexer/impl/Lexer.cpp)
 
 # add the executable files to the project
 add_executable(Kaleidoscope ${SOURCE_FILES})

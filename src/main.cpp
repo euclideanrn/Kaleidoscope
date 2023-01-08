@@ -3,26 +3,16 @@
 //
 #include <iostream>
 #include <fmt/format.h>
-#include "lexer.cpp"
+#include "lexer/Lexer.h"
 
 using fmt::format;
 using std::cout;
 
 int main() {
-    // define a string literal
-    const char str[] {"Hello, World! 1234567890"};
-    for (auto *p = str; *p; p++) {
-        if (isspace(*p)) {
-            fmt::print("space ");
-        } else if (isalpha(*p)) {
-            fmt::print("[alpha: {}] ", *p);
-        } else {
-            fmt::print("{} ", *p);
-        }
-    }
-
-    fmt::print("\n");
-    fmt::print("token: {} \n", gettok());
-
+    // access the gettok function in the Lexer class and print the result
+    // create a new lexer instance in memory
+    Lexer lexer;
+    // call the gettok function on the lexer instance and assign the result to a variable
+    fmt::print("gettok: {} \n", lexer.gettok());
     return 0;
 }
