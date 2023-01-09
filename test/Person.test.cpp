@@ -1,7 +1,7 @@
 //
 // Created by FANYI ZHAO on 1/8/23.
 //
-#include "person.h"
+#include "Person.h"
 #include <gtest/gtest.h>
 
 TEST(PersonTest, Greet) {
