@@ -4,7 +4,6 @@
 #pragma once
 
 #include <string>
-#include <memory>
 #include "ExprAST.h"
 
 using std::unique_ptr;

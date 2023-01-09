@@ -4,7 +4,6 @@
 #pragma once
 
 #include <string>
-#include <memory>
 #include <utility>
 #include <vector>
 #include "ExprAST.h"
