@@ -1,3 +1,5 @@
+![unit test](https://github.com/euclideanrn/Kaleidoscope/actions/workflows/cmake.yml/badge.svg)
+
 # My First Language Frontend with LLVM Tutorial
 
 **Requirements:** This tutorial assumes you know C++, but no previous compiler experience is necessary.
