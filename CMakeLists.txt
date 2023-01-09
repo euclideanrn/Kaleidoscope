@@ -21,7 +21,18 @@ FetchContent_MakeAvailable(fmt)
 #pkg_check_modules(FMT REQUIRED IMPORTED_TARGET fmt)
 
 # set the source files, only one file with main() method is allowed
-set(SOURCE_FILES src/main.cpp src/lexer/impl/Lexer.cpp)
+set(SOURCE_FILES
+        src/main.cpp
+
+        #lexer
+        src/lexer/impl/Lexer.cpp
+
+        #parser
+        src/parser/impl/ExprAST.cpp
+        src/parser/impl/NumberExprAST.cpp
+        src/parser/impl/VariableExprAST.cpp
+        src/parser/impl/CallExprAST.cpp
+        src/parser/impl/BinaryExprAST.cpp)
 
 # add the executable files to the project
 add_executable(Kaleidoscope ${SOURCE_FILES})
