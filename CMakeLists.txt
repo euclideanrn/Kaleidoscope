@@ -6,11 +6,19 @@ set(CMAKE_CXX_STANDARD 20)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_CXX_EXTENSIONS OFF)
 
-# us pkg-config to locate a preinstalled fmt library
-# find pkg-config, make sure it's installed
-find_package(PkgConfig REQUIRED)
-# find fmt, make sure it's installed
-pkg_check_modules(FMT REQUIRED IMPORTED_TARGET fmt)
+# use FetchContent to download fmt library
+include(FetchContent)
+FetchContent_Declare(fmt
+        GIT_REPOSITORY https://github.com/fmtlib/fmt.git
+        GIT_TAG master
+)
+FetchContent_MakeAvailable(fmt)
+
+## us pkg-config to locate a preinstalled fmt library
+## find pkg-config, make sure it's installed
+#find_package(PkgConfig REQUIRED)
+## find fmt, make sure it's installed
+#pkg_check_modules(FMT REQUIRED IMPORTED_TARGET fmt)
 
 # set the source files, only one file with main() method is allowed
 set(SOURCE_FILES src/main.cpp src/lexer/impl/Lexer.cpp)
@@ -19,6 +27,6 @@ set(SOURCE_FILES src/main.cpp src/lexer/impl/Lexer.cpp)
 add_executable(Kaleidoscope ${SOURCE_FILES})
 
 # use pkg-config to get the cflags and libs for fmt
-target_link_libraries(Kaleidoscope PUBLIC PkgConfig::FMT)
+target_link_libraries(Kaleidoscope PRIVATE fmt)
 
 add_subdirectory(test)
