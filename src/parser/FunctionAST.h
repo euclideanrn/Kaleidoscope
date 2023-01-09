@@ -5,6 +5,7 @@
 
 #include <string>
 #include <vector>
+#include <memory>
 #include "PrototypeAST.h"
 #include "ExprAST.h"
 
