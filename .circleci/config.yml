@@ -14,7 +14,9 @@ jobs:
       - run:
           name: Setup cmake and build&test artifacts
           command: |
-            ./Kaleidoscope/build.sh
+            cmake -S . -B build
+            cmake --build ./build --target all -- -j 4
+            ctest --test-dir build/test
       - persist_to_workspace:
           root: .
           paths: [build]
