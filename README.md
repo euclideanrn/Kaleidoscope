@@ -1,4 +1,5 @@
 ![unit test](https://github.com/euclideanrn/Kaleidoscope/actions/workflows/cmake.yml/badge.svg)
+[![CircleCI](https://dl.circleci.com/status-badge/img/gh/euclideanrn/Kaleidoscope/tree/master.svg?style=svg)](https://dl.circleci.com/status-badge/redirect/gh/euclideanrn/Kaleidoscope/tree/master)
 
 # My First Language Frontend with LLVM Tutorial
 
