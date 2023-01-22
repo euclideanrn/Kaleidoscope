@@ -15,4 +15,6 @@ cmake -S . -B build
 cmake --build ./build --target all -- -j 4
 
 # Run tests.
-ctest --test-dir build/test
+if test -d build/test; then
+  cd build/test && ctest && cd ../..
+fi
