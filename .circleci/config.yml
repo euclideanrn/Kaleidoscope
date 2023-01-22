@@ -4,7 +4,7 @@ version: 2.1
 executors:
   gcc-executor:
     docker:
-      - image: gcc:9.5.0
+      - image: evanzhhh/circleci-cpp-env:0.1
 
 jobs:
   build:
@@ -12,14 +12,14 @@ jobs:
     steps:
       - checkout
       - run:
-          name: Setup cmake and build&test artifacts
+          name: build artifacts
           command: |
             cmake -S . -B build
             cmake --build ./build --target all -- -j 4
-            ctest --test-dir build/test
-      - persist_to_workspace:
-          root: .
-          paths: [build]
+      - run:
+          name: run tests
+          command: |
+            cd build/test && ctest
 
 # Invoke jobs via workflows
 # See: https://circleci.com/docs/2.0/configuration-reference/#workflows
