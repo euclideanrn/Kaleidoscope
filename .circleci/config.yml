@@ -19,7 +19,7 @@ jobs:
       - run:
           name: run tests
           command: |
-            cd build/test && ctest
+            cd build/test && ctest 
 
 # Invoke jobs via workflows
 # See: https://circleci.com/docs/2.0/configuration-reference/#workflows
