@@ -7,7 +7,7 @@ executors:
       - image: evanzhhh/circleci-cpp-env:0.1
 
 jobs:
-  build:
+  ctest:
     executor: gcc-executor
     steps:
       - checkout
@@ -26,4 +26,4 @@ jobs:
 workflows:
   build-workflow:
     jobs:
-      - build
+      - ctest
